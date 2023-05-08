@@ -1,6 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  :root {
+  --dark-black: #111418;
+  --light-black: #212529;
+  --dark-blue: #3C6EFD;
+  --light-gray:#FAFAFAE6;
+  --white: #FFFFFF;
+  }
 
 /* @layer components {
     .btn-primary {

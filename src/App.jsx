@@ -1,21 +1,17 @@
 import './App.css'
-
+import Sidebar from "./components/Sidebar"
 function App() {
 
   return (
     <>
       <div className='landing-page'>
-        <div className="sidebar">
-          <div className="divs"></div>
-          <div className="divs"></div>
-          <div className="divs"></div>
-        </div>
-        <div className="body">
-          <div className="header">
-            <h1>Afaq</h1>
-            <h2>Front-end developer</h2>
-          </div>
-        </div>
+      <Sidebar/>  
+      <div className="lg:ml-[260px] border-solid border-2 border-sky-500">
+         <div className=" h-[100vh] bg-sky-500">
+            <h1>Front-end developer</h1>
+            <h1>Afaq Ali</h1>
+         </div>
+      </div>
       </div>
     </>
   )
