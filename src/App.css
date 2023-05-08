@@ -1,6 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
 --dark-black-: #111418;
 --light-black: #212529;
 --dark-blue: #3C6EFD;
 --white: #FFFFFF;
+}
+
+.sidebar {
+  position: fixed;
+  width: 260px;
+  background-color: var(--dark-black-);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.body {
+  background-color: var(--light-black);
+  height: 200vh;
+  width: 100%;
+  margin-left: 260px;
+}
+h1 {
+  color: red;
+  font-size: 34px;
 }
