@@ -14,3 +14,11 @@
 .navbar-toggler span.active:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+.header {
+  background-image: url("/src/assets/header-img.jpg");
+  position: relative;
+}
+.header::after {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+}
