@@ -17,6 +17,7 @@
 .header {
   background-image: url("/src/assets/header-img.jpg");
   position: relative;
+  /* display: none; */
 }
 .header::after {
   width: 100%;

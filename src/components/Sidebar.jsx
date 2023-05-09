@@ -15,7 +15,7 @@ const Sidebar = () => {
   })
 
   return (
-    <div className='fixed w-[100%] flex bg-[--dark-black] items-center justify-between px-3 py-4 lg:flex-col  lg:min-h-full  lg:w-[260px]'>
+    <div className='fixed z-[2] lg:z-[0] w-[100%] flex bg-[--dark-black] items-center justify-between px-3 py-4 lg:flex-col  lg:min-h-full  lg:w-[260px]'>
        {/* sidebar Profile Photo section */}
        <div>
           <div className="hidden border-solid w-[160px] h-[170px] border-8 border-[#343A40] rounded-[50%]  lg:flex flex-col items-center  mt-6 ">
