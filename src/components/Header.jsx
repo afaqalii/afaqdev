@@ -4,7 +4,7 @@ import "../App.css"
 const Header = () => {
   return (
     <>
-    <div className="header relative bg-[--dark-black] after:content-[''] after:absolute after:top-0 after:left-0 after:h-[100%]  bg-cover bg-center h-screen">
+    <div className="header relative bg-[--dark-black] after:content-[''] after:absolute after:top-0 after:left-0 after:h-[100%]  bg-cover bg-center bg-fixed h-screen">
         <div className='absolute z-[1] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[100%] text-center text-[--white]'>
             <h2 className='text-[28px] font-medium mb-6'>Welcome</h2>
             <h1 className='text-4xl sm:text-5xl xl:text-[64px] font-semibold'>I'm a Front-end developer.</h1>
