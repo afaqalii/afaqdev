@@ -8,7 +8,7 @@ const Sidebar = () => {
   const MenuItems = menuItems.map((menuItem) => {
     const { item } = menuItem
       return (
-        <li className='li relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
+        <li className='li leading-7 relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
           <a href="#" className='tracking-wide'>{item}</a>
         </li>
       )

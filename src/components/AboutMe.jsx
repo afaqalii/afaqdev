@@ -15,8 +15,7 @@ const AboutMe = () => {
 
 
   return (
-    <div className=''>
-        <h1 className='text-4xl text-white font-semibold text-center py-5'>Know Me More</h1>
+    <div className='my-12'>
         {/* know me more content start from here */}
         <div className="flex flex-col mt-12 lg:flex-row">
             <div  className="text-center lg:text-left">
