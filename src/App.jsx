@@ -2,6 +2,7 @@ import './App.css'
 import AboutMe from './components/AboutMe'
 import ContainerWrapper from './components/ContainerWrapper'
 import Header from './components/Header'
+import MyWork from './components/MyWork'
 import Services from './components/Services'
 import Sidebar from "./components/Sidebar"
 function App() {
@@ -15,13 +16,21 @@ function App() {
          <ContainerWrapper 
              bgColor={`bg-[--light-black]`} 
              content={<AboutMe/>} 
-             backgroundTitle={"About Me"}
-             title={"Know Me More"}/>
+             backgroundTitle={"about me"}
+             title={"Know Me More"}
+          />
          <ContainerWrapper 
              bgColor={`bg-[--bg-light]`} 
              content={<Services/>} 
-             backgroundTitle={"Services"}
-             title={"What I Do"}/>
+             backgroundTitle={"services"}
+             title={"What I Do"}
+          />
+          <ContainerWrapper 
+             bgColor={`bg-[--light-black]`} 
+             content={<MyWork/>} 
+             backgroundTitle={"portfolio"}
+             title={"My Work"}
+          />
       </div>
       </div>
     </>

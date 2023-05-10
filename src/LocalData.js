@@ -1,4 +1,9 @@
 import { FaDesktop, FaPaintBrush, FaPalette, FaPencilRuler } from "react-icons/fa";
+import Movix from "./assets/Movix.png"
+import YoutubeClone from "./assets/youtubeClone.png"
+import onlinestore from "./assets/onlinestore.png"
+import lawyers from "./assets/lawyers.png"
+import afaqdev from "./assets/afaqdev.png"
 
 export const menuItems = [
     {
@@ -37,7 +42,7 @@ export const bioData = [
     },
 ]
 
-export const MyServies = [
+export const MyServiesData = [
     {
         title: "Web Design",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
@@ -60,3 +65,25 @@ export const MyServies = [
     },
 ]
 
+export const MyWorkData = [
+    {
+        title: "Youtube Clone",
+        img: YoutubeClone,
+    },
+    {
+        title: "Movix",
+        img: Movix,
+    },
+    {
+        title: "Online Store",
+        img: onlinestore,
+    },
+    {
+        title: "Law firm",
+        img: lawyers,
+    },
+    {
+        title: "My Portfolio",
+        img: afaqdev,
+    },
+]

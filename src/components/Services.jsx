@@ -1,11 +1,11 @@
 import React from 'react'
-import { MyServies } from '../LocalData'
+import { MyServiesData } from '../LocalData'
 
 const Services = () => {
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 mt-12 px-8'>
       {
-        MyServies.map((service) => {
+        MyServiesData.map((service) => {
           return (
             <>
               <div className="flex gap-5 pb-24">
