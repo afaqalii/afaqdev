@@ -7,15 +7,15 @@ const Services = () => {
       {
         MyServiesData.map((service) => {
           return (
-            <>
-              <div className="flex gap-5 pb-24">
+            
+              <div key={service.id} className="flex gap-5 pb-24">
                 <div className="bg-[--light-dark] h-16 w-16"></div>
                 <div className="">
                   <h3 className='text-xl font-bold'>{service.title}</h3>
                   <p className='text-[--sm-text] lg:w-[70%] mt-3'>{service.content}</p>
                 </div>
               </div>
-            </>
+            
           )
         })
       }

@@ -1,19 +1,24 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import MyPhoto from "../assets/afaq-photo.jpg"
 import  "../App.css"
 import { menuItems } from '../LocalData'
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 const Sidebar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
+  const ref = useRef()
+  const handleRef = () =>{
+    ref.current.focus()
+    console.log(ref.current.focus())
+   }
   const MenuItems = menuItems.map((menuItem) => {
-    const { item } = menuItem
+    const { item, id } = menuItem
       return (
-        <li className='li leading-7 relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
+        <li key={id} onClick={handleRef} className='li leading-7 relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
           <a href="#" className='tracking-wide'>{item}</a>
         </li>
       )
-  })
-
+    })
+   
   return (
     <div className='fixed z-[2] lg:z-[0] w-[100%] flex bg-[--dark-black] items-center justify-between px-3 py-4 lg:flex-col  lg:min-h-full  lg:w-[260px]'>
        {/* sidebar Profile Photo section */}
@@ -31,9 +36,9 @@ const Sidebar = () => {
        </div>
        {/* sidebar Social icons section */}
        <div className="social-icons gap-x-3 flex sm:gap-x-4 px-2">
-          <FaGithub className=' lg:text-2xl hover:text-[--dark-blue] text-[--light-gray]'/>
-          <FaTwitter className=' lg:text-2xl hover:text-[--dark-blue] text-[--light-gray]'/>
-          <FaLinkedin className=' lg:text-2xl hover:text-[--dark-blue] text-[--light-gray]'/>
+          <a href="https://github.com/afaqalii" target='_blank'><FaGithub   href=''  className=' lg:text-2xl hover:text-[--dark-blue] text-[--light-gray]'/></a>
+          <a href="https://twitter.com/AfaqAli11459079" target='_blank'><FaTwitter  href=''  className=' lg:text-2xl hover:text-[--dark-blue] text-[--light-gray]'/></a>
+          <a href="https://www.linkedin.com/in/afaqalii/" target='_blank'><FaLinkedin   className=' lg:text-2xl hover:text-[--dark-blue] text-[--light-gray]'/></a>
        </div>
        {/* sidebar MENU BUTTON */}
         <div className='flex flex-col gap-1 navbar-toggler lg:hidden' onClick={() => setToggleMenu(prevState => !prevState)}>

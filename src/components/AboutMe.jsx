@@ -4,9 +4,9 @@ import { bioData } from '../LocalData'
 const AboutMe = () => {
 
     const BioTable = bioData.map((data) => {
-          const {title, content} = data
+          const {title, content, id} = data
         return (
-                <tr className="ml-5 mb-3 h-[40px]">
+                <tr key={id} className="ml-5 mb-3 h-[40px]">
                     <th className='text-white w-[64px]'>{title}:</th>
                     <td className='text-white'>{content}</td>
                 </tr>

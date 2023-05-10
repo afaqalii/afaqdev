@@ -20,7 +20,8 @@ const ContainerWrapper = ({backgroundTitle, content, bgColor, title}) => {
         <h1 className='relative text-4xl text-white font-semibold text-center py-5 after:absolute
                       after:content-[""]
                       after:bottom-0
-                      after:left-[45%]
+                      after:left-[35%]
+                      md:after:left-[45%]
                       after:bg-[--dark-blue]
                       after:h-[3px]
                       after:w-[100px]

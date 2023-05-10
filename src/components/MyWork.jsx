@@ -7,7 +7,7 @@ const MyWork = () => {
         {
             MyWorkData.map(work => {
                 return (
-                  <div className="card">
+                  <div key={work.id} className="card grid place-content-center">
                    <div className='relative cursor-pointer img w-full h-[300px] lg:w-[300px] md:h-[300px]'>
                   
                     <div className="project-btns">
