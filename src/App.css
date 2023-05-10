@@ -23,3 +23,47 @@
   width: 100%;
   background-color: rgba(0, 0, 0, .6);
 }
+.project-btns {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  z-index: 2;
+  border: 3px solid red;
+  visibility: hidden;
+} 
+.project-btns:hover {
+  visibility: visible;
+  z-index: 2;
+}
+.img {
+  position: relative;
+  transition: .4s ease;
+}
+.img-btn {
+  padding: .7rem 1.5rem;
+  background-color: var(--dark-blue);
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  width: max-content;
+  height: max-content;
+}
+
+.preview-btn {
+  background-color: transparent;
+}
+.img::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   border-radius: 1rem;
+}
+.img:hover::after {
+  opacity: .8;
+  background-color: rgba(0, 0, 0, .6);
+}

@@ -3,15 +3,21 @@ import { MyWorkData } from '../LocalData'
 
 const MyWork = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12'>
+    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-12'>
         {
             MyWorkData.map(work => {
                 return (
-                  <div className="cursor-pointer">
-                   <div className='w-[400px] h-[400px]'>
-                     <img className='h-full object-cover w-full' src={work.img} alt={work.title} />
+                  <div className="card">
+                   <div className='relative cursor-pointer img w-full h-[300px] lg:w-[300px] md:h-[300px]'>
+                  
+                    <div className="project-btns">
+                        <button className='img-btn'>Project Details</button>
+                        <p className='text-center text-white mt-3'>Preview</p>
+                   </div> 
+                    <img className='h-full object-cover w-full rounded-[1rem]' src={work.img} alt={work.title} />
+                  
                    </div>
-                    <h2 className='mt-3 font-bold'>{work.title}</h2>
+                    <h2 className='cursor-pointer mt-3 font-bold'>{work.title}</h2>
                   </div>    
                 )
             })

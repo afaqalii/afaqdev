@@ -3,7 +3,7 @@ import { MyServiesData } from '../LocalData'
 
 const Services = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 mt-12 px-8'>
+    <div className='grid grid-cols-1 md:grid-cols-2 mt-12  sm:px-8'>
       {
         MyServiesData.map((service) => {
           return (

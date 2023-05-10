@@ -1,5 +1,6 @@
 import './App.css'
 import AboutMe from './components/AboutMe'
+import ContactUs from './components/ContactUs'
 import ContainerWrapper from './components/ContainerWrapper'
 import Header from './components/Header'
 import MyWork from './components/MyWork'
@@ -30,6 +31,12 @@ function App() {
              content={<MyWork/>} 
              backgroundTitle={"portfolio"}
              title={"My Work"}
+          />
+          <ContainerWrapper 
+             bgColor={`bg-[--bg-light]`} 
+             content={<ContactUs/>} 
+             backgroundTitle={"contact"}
+             title={"Get In Touch"}
           />
       </div>
       </div>
