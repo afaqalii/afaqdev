@@ -1,18 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;; */
   }
   :root {
   --dark-black: #111418;
   --light-black: #212529;
   --bg-light: #343A40;
-  --dark-blue: #3C6EFD;
+  --dark-blue: #D6383D;
   --light-gray:#FAFAFAE6;
   --white: #FFFFFF;
   --sm-text: #909294;

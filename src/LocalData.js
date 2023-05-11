@@ -4,6 +4,7 @@ import YoutubeClone from "./assets/youtubeClone.png"
 import onlinestore from "./assets/onlinestore.png"
 import lawyers from "./assets/lawyers.png"
 import afaqdev from "./assets/afaqdev.png"
+import MyAgency from "./assets/MyAgency.png"
 
 export const menuItems = [
     {
@@ -57,28 +58,49 @@ export const MyServiesData = [
     {
         title: "Web Design",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
-        id:"10"
+        id:"10",
         // icon: <FaDesktop/>,
     },
     {
         title: "Web Apps Design",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
-        id:"11"
+        id:"11",
         // icon: <FaPalette/>
     },
     {
         title: "Website development",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
-        id:"12"
+        id:"12",
         // icon: <FaPencilRuler/>
     },
     {
         title: "Web App development",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
-        id:"13"
+        id:"13",
         // icon: <FaPaintBrush/>
     },
 ]
+// export const categories = [
+//     { name: "New", icon: <AiFillHome />, type: "home" },
+//     { name: "Trending", icon: <MdLocalFireDepartment />, type: "category" },
+//     { name: "Music", icon: <CgMusicNote />, type: "category" },
+//     { name: "Films", icon: <FiFilm />, type: "category" },
+//     { name: "Live", icon: <MdLiveTv />, type: "category" },
+//     { name: "Gaming", icon: <IoGameControllerSharp />, type: "category" },
+//     { name: "News", icon: <ImNewspaper />, type: "category" },
+//     { name: "Sports", icon: <GiDiamondTrophy />, type: "category" },
+//     { name: "Learning", icon: <RiLightbulbLine />, type: "category" },
+//     {
+//         name: "Fashion & beauty",
+//         icon: <GiEclipse />,
+//         type: "category",
+//         divider: true,
+//     },
+//     { name: "Settings", icon: <FiSettings />, type: "menu" },
+//     { name: "Report History", icon: <AiOutlineFlag />, type: "menu" },
+//     { name: "Help", icon: <FiHelpCircle />, type: "menu" },
+//     { name: "Send feedback", icon: <RiFeedbackLine />, type: "menu" },
+// ];
 
 export const MyWorkData = [
     {
@@ -104,6 +126,11 @@ export const MyWorkData = [
     {
         title: "My Portfolio",
         img: afaqdev,
+        id:"18"
+    },
+    {
+        title: "Apolarity Studios",
+        img: MyAgency,
         id:"18"
     },
 ]

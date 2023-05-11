@@ -7,7 +7,7 @@ const Sidebar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   const ref = useRef()
   const handleRef = () =>{
-    ref.current.focus()
+    ref.current.scroll
     console.log(ref.current.focus())
    }
   const MenuItems = menuItems.map((menuItem) => {
