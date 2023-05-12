@@ -4,13 +4,16 @@ import ContactUs from './components/ContactUs'
 import ContainerWrapper from './components/ContainerWrapper'
 import Header from './components/Header'
 import MyWork from './components/MyWork'
+import { ProjectDetails } from './components/ProjectDetails'
 import Services from './components/Services'
 import Sidebar from "./components/Sidebar"
 function App() {
 
   return (
     <>
-      <div className='landing-page'>
+      <ProjectDetails/>
+    
+      <div className='landing-page hidden'>
       <Sidebar/>  
       <div id='main-content' className="lg:ml-[260px]">
         <Header/>

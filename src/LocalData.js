@@ -106,31 +106,168 @@ export const MyWorkData = [
     {
         title: "Youtube Clone",
         img: YoutubeClone,
-        id:"14"
+        id:"14",
+        imageCarousel: [],
+        projectInfoTitle: "",
+        projectInfo:"Project Info",
+        projectDetailsTitle:"Project Details",
+        projectDetails:[
+            {
+                title:"URL",
+                content:"youtube-afaqalii.vercel.app",
+            },
+            {
+                title:"Source Code",
+                content:"github.com/afaqalii/youtube",
+            },
+            {
+                title:"Technologies",
+                content:"React, SCSS, Axios, HTML5",
+            },
+            {
+                title:"Industry",
+                content:"Front-end development",
+            },
+        ],
+
     },
     {
         title: "Movix",
         img: Movix,
-        id:"15"
+        id:"15",
+        imageCarousel: [],
+        projectInfoTitle: "",
+        projectInfo:"Project Info",
+        projectDetailsTitle:"Project Details",
+        projectDetails:[
+            {
+                title:"URL",
+                content:"youtube-afaqalii.vercel.app",
+            },
+            {
+                title:"Source Code",
+                content:"github.com/afaqalii/youtube",
+            },
+            {
+                title:"Technologies",
+                content:"React, SCSS, Axios, HTML5",
+            },
+            {
+                title:"Industry",
+                content:"Front-end development",
+            },
+        ],
     },
     {
         title: "Online Store",
         img: onlinestore,
-        id:"16"
+        id:"16",
+        imageCarousel: [],
+        projectInfoTitle: "",
+        projectInfo:"Project Info",
+        projectDetailsTitle:"Project Details",
+        projectDetails:[
+            {
+                title:"URL",
+                content:"youtube-afaqalii.vercel.app",
+            },
+            {
+                title:"Source Code",
+                content:"github.com/afaqalii/youtube",
+            },
+            {
+                title:"Technologies",
+                content:"React, SCSS, Axios, HTML5",
+            },
+            {
+                title:"Industry",
+                content:"Front-end development",
+            },
+        ],
     },
     {
         title: "Law firm",
         img: lawyers,
-        id:"17"
+        id:"17",
+        imageCarousel: [],
+        projectInfoTitle: "",
+        projectInfo:"Project Info",
+        projectDetailsTitle:"Project Details",
+        projectDetails:[
+            {
+                title:"URL",
+                content:"youtube-afaqalii.vercel.app",
+            },
+            {
+                title:"Source Code",
+                content:"github.com/afaqalii/youtube",
+            },
+            {
+                title:"Technologies",
+                content:"React, SCSS, Axios, HTML5",
+            },
+            {
+                title:"Industry",
+                content:"Front-end development",
+            },
+        ],
     },
     {
         title: "My Portfolio",
         img: afaqdev,
-        id:"18"
+        id:"18",
+        imageCarousel: [],
+        projectInfoTitle: "",
+        projectInfo:"Project Info",
+        projectDetailsTitle:"Project Details",
+        projectDetails:[
+            {
+                title:"URL",
+                content:"youtube-afaqalii.vercel.app",
+            },
+            {
+                title:"Source Code",
+                content:"github.com/afaqalii/youtube",
+            },
+            {
+                title:"Technologies",
+                content:"React, SCSS, Axios, HTML5",
+            },
+            {
+                title:"Industry",
+                content:"Front-end development",
+            },
+        ],
     },
     {
         title: "Apolarity Studios",
         img: MyAgency,
-        id:"18"
+        id:"19",
+        imageCarousel: [],
+        projectInfoTitle: "",
+        projectInfo:"Project Info",
+        projectDetailsTitle:"Project Details",
+        projectDetails:[
+            {
+                title:"URL",
+                content:"youtube-afaqalii.vercel.app",
+            },
+            {
+                title:"Source Code",
+                content:"github.com/afaqalii/youtube",
+            },
+            {
+                title:"Technologies",
+                content:"React, SCSS, Axios, HTML5",
+            },
+            {
+                title:"Industry",
+                content:"Front-end development",
+            },
+        ],
     },
 ]
+
+// export const ProjectsDetails = () => {
+
+// }
