@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MyWorkData } from '../LocalData'
+import { ProjectDetails } from './ProjectDetails'
 
 const MyWork = () => {
+  const [show, setShow] = useState(false)
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-12'>
         {
@@ -10,7 +12,7 @@ const MyWork = () => {
                   <div key={work.id} className="card grid place-content-center">
                    <div className='img relative cursor-pointer  w-full h-[300px] lg:w-[300px] md:h-[300px]'>
                     <div className="project-btns">
-                        <button className='img-btn'>Project Details</button>
+                        <button className='img-btn' onClick={() => setShow(prevState => !prevState)}>Project Details</button>
                         <p className="relative text-center text-white mt-3  after:contents-[''] after:absolute after:w-[0] after:ease-in after:duration-300 after:bottom-[-8px] after:left-[48px] after:h-1 after:rounded-md after:bg-white after:hover:bg-white after:hover:w-[55px]">Preview</p>
                    </div> 
                     <img className='h-full object-cover w-full rounded-[1rem]' src={work.img} alt={work.title} />
@@ -21,6 +23,8 @@ const MyWork = () => {
                 )
             })
         }
+   
+      {show ? <ProjectDetails show={show} setShow={setShow}/> : ""}
     </div>
   )
 }

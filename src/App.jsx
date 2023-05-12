@@ -10,10 +10,8 @@ import Sidebar from "./components/Sidebar"
 function App() {
 
   return (
-    <>
-      <ProjectDetails/>
-    
-      <div className='landing-page hidden'>
+    <>    
+      <div className='landing-page'>
       <Sidebar/>  
       <div id='main-content' className="lg:ml-[260px]">
         <Header/>

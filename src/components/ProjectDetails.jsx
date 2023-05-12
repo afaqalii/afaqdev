@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {} from "react-icons"
 import { FaCross } from 'react-icons/fa'
 import Movix from "../assets/Movix.png"
-export const ProjectDetails = () => {
-        
+export const ProjectDetails = ({show, setShow}) => {
     return (
+  <div className='relative'>
     <div className='relative w-4/5 mx-auto p-10 bg-[--light-black] border-2 border-white'>
        <h1 className='text-center text-3xl'>Project Title</h1>
-       <FaCross className='absolute right-[30px] top-[20px] ' />
-       <div className="flex flex-col lg:flex-row border-2 border-white">
-            <div className="w-3/5">
-                <img src={Movix} alt="" />
+       <FaCross className='absolute right-[30px] top-[20px] cursor-pointer' onClick={() => setShow(!show)} />
+       <div className="flex flex-col lg:flex-row py-10">
+            <div className="flex justify-center w-3/5">
+                <img className='' src={Movix} alt="" />
             </div>
             <div className="w-2/5 flex flex-col gap-5">
                 <h2 className='text-2xl'>Project name</h2>
@@ -24,5 +24,6 @@ export const ProjectDetails = () => {
             </div>
        </div>
     </div>
+</div>
   )
 }
