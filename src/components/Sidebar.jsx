@@ -2,20 +2,19 @@ import React, { useRef, useState } from 'react'
 import MyPhoto from "../assets/afaq-photo.jpg"
 import  "../App.css"
 import { menuItems } from '../LocalData'
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaDesktop, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { HashLink as Link } from "react-router-hash-link"
 const Sidebar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
-  const ref = useRef()
-  const handleRef = () =>{
-    ref.current.scroll
-    console.log(ref.current.focus())
-   }
+  
   const MenuItems = menuItems.map((menuItem) => {
     const { item, id } = menuItem
       return (
-        <li key={id} onClick={handleRef} className='li leading-7 relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
-          <a href="#" className='tracking-wide'>{item}</a>
-        </li>
+        <Link to={`#${item}`}>
+          <li key={id} className='li leading-7 relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
+            <a href="#" className='tracking-wide'>{item}</a>
+          </li>
+        </Link>
       )
     })
    
@@ -30,7 +29,7 @@ const Sidebar = () => {
        </div>
        {/* sidebar Menu Items section */}
        <div className={`${toggleMenu ? 'absolute' : 'hidden' }  lg:mt-[-4rem] bg-black  lg:bg-transparent lg:text-center w-[100%] left-0 top-16 lg:flex flex-col`}>
-          <ul className='p-4'>
+          <ul className='p-4 cursor-pointer'>
           {MenuItems}
           </ul>
        </div>

@@ -17,13 +17,13 @@ export const menuItems = [
         id:"2"
     },
     {
-        item: "what I do",
+        item: "services",
         id:"3"
     },
-    {
-        item: "resume",
-        id:"4"
-    },
+    // {
+    //     item: "resume",
+    //     id:"4"
+    // },
     {
         item: "portfolio",
         id:"5"
@@ -136,9 +136,10 @@ export const MyWorkData = [
         img: Movix,
         id:"15",
         imageCarousel: [],
-        projectInfoTitle: "",
-        projectInfo:"Project Info",
+        projectInfoTitle: "Project Info",
+        projectInfo:"This is an IMDB clone. You can search any type of movie watch its trailer the cast and all the ratings details. This project includes lazy loading searching features filtering.",
         projectDetailsTitle:"Project Details",
+        projectDetailText:"",
         projectDetails:[
             {
                 title:"URL",

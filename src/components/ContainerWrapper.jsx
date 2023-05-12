@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContainerWrapper = ({backgroundTitle, content, bgColor, title}) => {
   return (
-    <div className={`relative ${bgColor} px-5 md:px-12 py-16`}>
+    <div id={backgroundTitle} className={`relative ${bgColor} px-5 md:px-12 py-16`}>
         <h1 
            className='uppercase
                       text-center 
