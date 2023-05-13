@@ -1,8 +1,14 @@
-import React from 'react'
+import { useInView } from 'framer-motion'
+import React, { useRef } from 'react'
 
 const ContainerWrapper = ({backgroundTitle, content, bgColor, title}) => {
+   
+  const ref = useRef()
+  const isInView = useInView(ref)
+
+
   return (
-    <div id={backgroundTitle} className={`relative ${bgColor} px-5 md:px-12 py-16`}>
+    <div id={backgroundTitle} className={`relative ${bgColor} px-5 md:px-12 py-20 md:py-40`}>
         <h1 
            className='uppercase
                       text-center 
@@ -17,7 +23,10 @@ const ContainerWrapper = ({backgroundTitle, content, bgColor, title}) => {
                 {backgroundTitle}
           </h1>
         <div className="max-w-7xl mx-auto">
-        <h1 className='relative text-4xl text-white font-semibold text-center py-5 after:absolute
+        <h1 style={{
+             opacity: isInView ? 1 : 0,
+             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
+        }} className='relative text-4xl text-white font-semibold text-center py-5 after:absolute
                       after:content-[""]
                       after:bottom-0
                       after:left-[35%]
@@ -28,7 +37,13 @@ const ContainerWrapper = ({backgroundTitle, content, bgColor, title}) => {
                       '
             >{title}
          </h1>
-           {content}
+            <div ref={ref} style={{
+               transform: isInView ? "none" : "translatey(200px)",
+               opacity: isInView ? 1 : 0,
+               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
+            }}>
+                 {content}
+             </div>
         </div>
     </div>
   )
