@@ -202,6 +202,10 @@ export const MyWorkData = [
                 title:"Technologies",
                 content:"React, SCSS, Axios, HTML5",
             },
+            {
+                title:"Industry",
+                content:"Front-end development",
+            },
         ],
     },
     {
@@ -229,6 +233,10 @@ export const MyWorkData = [
                 title:"Technologies",
                 content:"React, SCSS, Axios, HTML5",
             },
+            {
+                title:"Industry",
+                content:"Front-end development",
+            },
         ],
     },
     {
@@ -255,6 +263,10 @@ export const MyWorkData = [
             {
                 title:"Technologies",
                 content:"React, SCSS, Axios, HTML5",
+            },
+            {
+                title:"Industry",
+                content:"Front-end development",
             },
             
         ],

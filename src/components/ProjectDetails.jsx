@@ -49,7 +49,7 @@ return (
                   return (
                     <div key={index} className="flex gap-1 sm:gap-4">
                       <p className='text-[--sm-text]'>{title}:</p>
-                      <p onClick={() => setLink(title === "Technologies" ? false : true )}  className={`text-[--sm-text] font-bold text-white`}><a href={link ? `https://${content}` : '#'} target={`${link ? '_blank' : ''}`}  >{content}</a></p>
+                      <p onClick={() => setLink(title === "Technologies" || title === "Industry" ? false : true )}  className={`text-[--sm-text] ${title === "Technologies" || title === "Industry" ? 'font-normal' : 'font-bold capitalize'} text-white`}><a href={link ? `https://${content}` : '#'} target={`${link ? '_blank' : ''}`}  >{content}</a></p>
                     </div>
                   )
                 })

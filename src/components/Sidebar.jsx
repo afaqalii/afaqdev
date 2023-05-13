@@ -6,12 +6,16 @@ import { FaDesktop, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 import { HashLink as Link } from "react-router-hash-link"
 const Sidebar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
+  const [activeId ,setActiveId] = useState(true)
   
   const MenuItems = menuItems.map((menuItem) => {
     const { item, id } = menuItem
       return (
-        <Link key={id} to={`#${item}`}>
-          <li onClick={() => window.innerWidth < 1024 ? setToggleMenu(prevState => !prevState) : '' } className='li leading-7 relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
+        <Link className='text-[--dark-blue]' key={id} to={`#${item}`}>
+          <li onClick={() => {
+             window.innerWidth < 1024 ? setToggleMenu(prevState => !prevState) : '' 
+             setActiveId(id)
+          } } className={`li leading-7 relative lg:static list-none ${activeId === id ? 'text-[--dark-blue]' : 'text-[--sm-text]'} capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]`}>
             <a href="#" className='tracking-wide'>{item}</a>
           </li>
         </Link>
