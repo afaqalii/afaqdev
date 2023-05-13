@@ -5,6 +5,20 @@ import onlinestore from "./assets/onlinestore.png"
 import lawyers from "./assets/lawyers.png"
 import afaqdev from "./assets/afaqdev.png"
 import MyAgency from "./assets/MyAgency.png"
+import Movix2 from "./assets/Movix-2.png"
+import Movix3 from "./assets/Movix-3.png"
+import onlinestore2 from "./assets/onlinestore-2.png"
+import onlinestore3 from "./assets/onlinestore-3.png"
+import lawyers2 from "./assets/lawyers-2.png"
+import lawyers3 from "./assets/lawyers-3.png"
+import afaqdev2 from "./assets/afaqdev-2.png"
+import afaqdev3 from "./assets/afaqdev-3.png"
+import afaqdev4 from "./assets/afaqdev-4.png"
+import MyAgency2 from "./assets/MyAgency-2.png"
+import MyAgency3 from "./assets/MyAgency-3.png"
+
+
+
 
 export const menuItems = [
     {
@@ -87,9 +101,9 @@ export const MyWorkData = [
         img: YoutubeClone,
         id:"14",
         imageCarousel: [
-            Movix,
-            MyAgency,
-            lawyers
+            YoutubeClone,
+            afaqdev2,
+            afaqdev3
         ],
         projectInfoTitle: "",
         projectInfo:"Project Info",
@@ -120,8 +134,8 @@ export const MyWorkData = [
         id:"15",
         imageCarousel: [
             Movix,
-            MyAgency,
-            lawyers
+            Movix2,
+            Movix3
         ],
         projectInfoTitle: "Project Info",
         projectInfo:"This is an IMDB clone. You can search any type of movie watch its trailer the cast and all the ratings details. This project includes lazy loading searching features filtering.",
@@ -130,11 +144,11 @@ export const MyWorkData = [
         projectDetails:[
             {
                 title:"URL",
-                content:"youtube-afaqalii.vercel.app",
+                content:"movix-mu.vercel.app",
             },
             {
                 title:"Source Code",
-                content:"github.com/afaqalii/youtube",
+                content:"github.com/afaqalii/Movix",
             },
             {
                 title:"Technologies",
@@ -151,9 +165,9 @@ export const MyWorkData = [
         img: onlinestore,
         id:"16",
         imageCarousel: [
-            Movix,
-            MyAgency,
-            lawyers
+            onlinestore,
+            onlinestore2,
+            onlinestore3
         ],
         projectInfoTitle: "",
         projectInfo:"Project Info",
@@ -165,7 +179,7 @@ export const MyWorkData = [
             },
             {
                 title:"Source Code",
-                content:"github.com/afaqalii/youtube",
+                content:"github.com/afaqalii/online-store",
             },
             {
                 title:"Technologies",
@@ -182,9 +196,9 @@ export const MyWorkData = [
         img: lawyers,
         id:"17",
         imageCarousel: [
-            Movix,
-            MyAgency,
-            lawyers
+            lawyers,
+            lawyers2,
+            lawyers3
         ],
         projectInfoTitle: "",
         projectInfo:"Project Info",
@@ -192,11 +206,11 @@ export const MyWorkData = [
         projectDetails:[
             {
                 title:"URL",
-                content:"youtube-afaqalii.vercel.app",
+                content:"afaqalii.github.io/Lawyers",
             },
             {
                 title:"Source Code",
-                content:"github.com/afaqalii/youtube",
+                content:"github.com/afaqalii/Lawyers",
             },
             {
                 title:"Technologies",
@@ -213,9 +227,10 @@ export const MyWorkData = [
         img: afaqdev,
         id:"18",
         imageCarousel: [
-            Movix,
-            MyAgency,
-            lawyers
+            afaqdev,
+            afaqdev2,
+            afaqdev3,
+            afaqdev4
         ],
         projectInfoTitle: "",
         projectInfo:"Project Info",
@@ -244,9 +259,9 @@ export const MyWorkData = [
         img: MyAgency,
         id:"19",
         imageCarousel: [
-            Movix,
             MyAgency,
-            lawyers
+            MyAgency2,
+            MyAgency3
         ],
         projectInfoTitle: "",
         projectInfo:"Project Info",
@@ -254,15 +269,15 @@ export const MyWorkData = [
         projectDetails:[
             {
                 title:"URL",
-                content:"youtube-afaqalii.vercel.app",
+                content:"apolarity-studios.vercel.app/",
             },
             {
                 title:"Source Code",
-                content:"github.com/afaqalii/youtube",
+                content:"github.com/afaqalii/MyAgency",
             },
             {
                 title:"Technologies",
-                content:"React, SCSS, Axios, HTML5",
+                content:"HTML5, SCSS, JAVASCRIPT, CSS3 ",
             },
             {
                 title:"Industry",

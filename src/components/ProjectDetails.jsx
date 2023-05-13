@@ -60,4 +60,3 @@ return (
 </div>
   )
 }
-// onClick={() => setLink(content === "Technologies" ? false : true)}
