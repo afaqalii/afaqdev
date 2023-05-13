@@ -8,8 +8,8 @@ const MyWork = () => {
         {
             MyWorkData.map(work => {
                 return (
-                  <Link to={`/${work.id}`}>
-                  <div key={work.id} className="card grid place-content-center">
+                  <Link key={work.id} to={`/${work.id}`}>
+                  <div  className="card grid place-content-center">
                    <div className='img relative cursor-pointer  w-full h-[300px] lg:w-[300px] md:h-[300px]'>
                     <div className="project-btns">
                         <button className='img-btn'>Project Details</button>

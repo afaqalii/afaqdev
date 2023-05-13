@@ -22,7 +22,7 @@ const LandingPage = () => {
              bgColor={`bg-[--bg-light]`} 
              content={<Services/>} 
              backgroundTitle={"services"}
-             title={"What I Do "}
+             title={"What I Do"}
           />
           <ContainerWrapper 
              bgColor={`bg-[--light-black]`} 

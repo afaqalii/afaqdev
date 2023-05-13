@@ -71,3 +71,12 @@
   opacity: .8;
   background-color: rgba(0, 0, 0, .6);
 }
+.carousel-root {
+  width: 80%;
+}
+.carousel .thumbs-wrapper {
+  display: none;
+}
+.carousel .carousel-status {
+  display: none;
+}

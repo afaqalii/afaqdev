@@ -10,8 +10,8 @@ const Sidebar = () => {
   const MenuItems = menuItems.map((menuItem) => {
     const { item, id } = menuItem
       return (
-        <Link to={`#${item}`}>
-          <li key={id} className='li leading-7 relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
+        <Link key={id} to={`#${item}`}>
+          <li onClick={() => setToggleMenu(prevState => !prevState)} className='li leading-7 relative lg:static list-none text-[--light-gray] capitalize p-2 hover:text-[--dark-blue] after:content-[""] after:absolute after:bottom-0 after:left-[8px] after:bg-[--light-gray] after:opacity-10 after:h-[1px] after:w-[100%]'>
             <a href="#" className='tracking-wide'>{item}</a>
           </li>
         </Link>
@@ -19,7 +19,7 @@ const Sidebar = () => {
     })
    
   return (
-    <div className='fixed z-[2] lg:z-[0] w-[100%] flex bg-[--dark-black] items-center justify-between px-3 py-4 lg:flex-col  lg:min-h-full  lg:w-[260px]'>
+    <div className='fixed z-[5] lg:z-[0] w-[100%] flex bg-[--dark-black] items-center justify-between px-3 py-4 lg:flex-col  lg:min-h-full  lg:w-[260px]'>
        {/* sidebar Profile Photo section */}
        <div>
           <div className="hidden border-solid w-[160px] h-[170px] border-8 border-[#343A40] rounded-[50%]  lg:flex flex-col items-center  mt-6 ">
