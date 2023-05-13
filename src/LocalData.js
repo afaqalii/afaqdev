@@ -238,11 +238,11 @@ export const MyWorkData = [
         projectDetails:[
             {
                 title:"URL",
-                content:"youtube-afaqalii.vercel.app",
+                content:"afaqdev.vercel.app/",
             },
             {
                 title:"Source Code",
-                content:"github.com/afaqalii/youtube",
+                content:"github.com/afaqalii/afaqdev",
             },
             {
                 title:"Technologies",
