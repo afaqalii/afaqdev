@@ -26,7 +26,7 @@ return (
        </Link>
        <h1 className='text-center text-3xl font-bold'>{projectDetail[0]?.title}</h1>
        <div className="flex flex-col lg:flex-row py-10 gap-5">
-            <div className="flex lg:justify-center w-3/5">
+            <div className="flex lg:justify-center w-full sm:w-4/5  md:w-3/5">
                 <Carousel>
                     {
                       projectDetail[0]?.imageCarousel.map((img) => {
