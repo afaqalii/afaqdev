@@ -13,8 +13,8 @@ const MyWork = () => {
                     <div className="project-btns">
                       <Link to={`/${work.id}`}>
                         <button className='img-btn'>Project Details</button>
-                      </Link>
-                        <p className="relative text-center text-white mt-3  after:contents-[''] after:absolute after:w-[0] after:ease-in after:duration-300 after:bottom-[-8px] after:left-[48px] after:h-1 after:rounded-md after:bg-white after:hover:bg-white after:hover:w-[55px]"><a href={`https://${work.projectDetails[0].content}`} target='_blank' >Preview</a></p>
+                      </Link> 
+                    <p className="relative text-center text-white mt-3  after:contents-[''] after:absolute after:w-[0] after:ease-in after:duration-300 after:bottom-[-8px] after:left-[48px] after:h-1 after:rounded-md after:bg-white after:hover:bg-white after:hover:w-[55px]"><a href={`https://${work.projectDetails[0].content}`} target="_blank" >Preview</a></p>
                    </div> 
                     <img className='h-full object-cover w-full rounded-[1rem]' src={work.img} alt={work.title} />
                   
