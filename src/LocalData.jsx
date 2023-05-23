@@ -73,25 +73,25 @@ export const MyServiesData = [
         title: "Web Design",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
         id:"10",
-        // icon: <FaDesktop/>,
+        icon: <FaDesktop/>,
     },
     {
         title: "Web Apps Design",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
         id:"11",
-        // icon: <FaPalette/>
+        icon: <FaPalette/>
     },
     {
         title: "Website development",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
         id:"12",
-        // icon: <FaPencilRuler/>
+        icon: <FaPencilRuler/>
     },
     {
         title: "Web App development",
         content:"I design websites. Make them responsive and user-friendly so that user engagement increases",
         id:"13",
-        // icon: <FaPaintBrush/>
+        icon: <FaPaintBrush/>
     },
 ]
 
