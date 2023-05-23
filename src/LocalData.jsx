@@ -16,6 +16,9 @@ import afaqdev3 from "./assets/afaqdev-3.png"
 import afaqdev4 from "./assets/afaqdev-4.png"
 import MyAgency2 from "./assets/MyAgency-2.png"
 import MyAgency3 from "./assets/MyAgency-3.png"
+import roofmasterLanding from "./assets/roofmasterLanding.png"
+import roofmasterServcies from "./assets/roofmasterService.png"
+import roofmasterWork from "./assets/roofmasterWork.png"
 
 
 
@@ -105,8 +108,8 @@ export const MyWorkData = [
             afaqdev2,
             afaqdev3
         ],
-        projectInfoTitle: "",
-        projectInfo:"Project Info",
+        projectInfoTitle: "Project Info",
+        projectInfo:"This is a youtube clone.All the data is being fetched using axios. There is loading when the content is not fetched. This app has all the major features that youtube have. Reusable components are used.",
         projectDetailsTitle:"Project Details",
         projectDetails:[
             {
@@ -169,8 +172,8 @@ export const MyWorkData = [
             onlinestore2,
             onlinestore3
         ],
-        projectInfoTitle: "",
-        projectInfo:"Project Info",
+        projectInfoTitle: "Project Info",
+        projectInfo:"This is an complete fullstack e-commerce app. But due to some reasons I could not upload this app.",
         projectDetailsTitle:"Project Details",
         projectDetails:[
             {
@@ -200,8 +203,8 @@ export const MyWorkData = [
             lawyers2,
             lawyers3
         ],
-        projectInfoTitle: "",
-        projectInfo:"Project Info",
+        projectInfoTitle: "Project Info",
+        projectInfo:"This is a website for lawyers.Reusable components are used for buttons and the navbar. Stylings are being send via props.",
         projectDetailsTitle:"Project Details",
         projectDetails:[
             {
@@ -214,7 +217,7 @@ export const MyWorkData = [
             },
             {
                 title:"Technologies",
-                content:"React, SCSS, Axios, HTML5",
+                content:"React, SCSS, CSS3, HTML5",
             },
             {
                 title:"Industry",
@@ -223,30 +226,29 @@ export const MyWorkData = [
         ],
     },
     {
-        title: "My Portfolio",
-        img: afaqdev,
+        title: "Roof Cleaning Company",
+        img: roofmasterLanding,
         id:"18",
         imageCarousel: [
-            afaqdev,
-            afaqdev2,
-            afaqdev3,
-            afaqdev4
+            roofmasterLanding,
+            roofmasterServcies,
+            roofmasterWork,
         ],
-        projectInfoTitle: "",
-        projectInfo:"Project Info",
+        projectInfoTitle: "Project Info",
+        projectInfo:"This is build with tailwind css. Using all the modern practices. This website is composed of 5-6 pages.",
         projectDetailsTitle:"Project Details",
         projectDetails:[
             {
                 title:"URL",
-                content:"afaqdev.vercel.app/",
+                content:"roofmaster.vercel.app/",
             },
             {
                 title:"Source Code",
-                content:"github.com/afaqalii/afaqdev",
+                content:"github.com/afaqalii/houseCleaning-company",
             },
             {
                 title:"Technologies",
-                content:"React, SCSS, Axios, HTML5",
+                content:"React, Tailwind, CSS3, HTML5",
             },
             {
                 title:"Industry",
@@ -263,8 +265,8 @@ export const MyWorkData = [
             MyAgency2,
             MyAgency3
         ],
-        projectInfoTitle: "",
-        projectInfo:"Project Info",
+        projectInfoTitle: "Project Info",
+        projectInfo:"",
         projectDetailsTitle:"Project Details",
         projectDetails:[
             {
